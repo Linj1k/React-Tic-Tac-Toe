@@ -28,7 +28,7 @@ class Board extends React.Component {
                     <Case 
                         key={index}
                         ref={this.cases[index]} 
-                        className={`border-${j < 2 ? 'e' : ''} ${i < 2 ? 'border-b' : ''}`} 
+                        className={`${j < 2 && 'border-e'} ${i < 2 && 'border-b'}`} 
                         onCasePlayed={this.props.onCasePlayed} 
                     />
                 );
